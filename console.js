@@ -1,6 +1,6 @@
 function customConsole() {
   window.emv = function(id) {
-    if (id.indexOf('ember') === -1) {
+    if (!isNaN(id) || id.indexOf('ember') === -1) {
       id = 'ember' + id
     }
     return Ember.View.views[id];

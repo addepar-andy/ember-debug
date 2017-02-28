@@ -16,7 +16,7 @@ In the chrome inspector javascript console, you can now use these functions:
 
 ### `emv`
 Short for EMber View. Its equivalent to typing `Ember.View.Views[thing]`.
-You can also omit the annoying 'ember' and just type the id
+You can also omit the annoying 'ember' and just type the id (string and number both work)
 
 ```javascript
 emv('ember2344')
