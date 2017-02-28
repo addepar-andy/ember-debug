@@ -1,5 +1,8 @@
 function customConsole() {
   window.emv = function(id) {
+    if (id.indexOf('ember') === -1) {
+      id = 'ember' + id
+    }
     return Ember.View.views[id];
   };
   window.emkeys = function(obj, includeUnderscore) {
