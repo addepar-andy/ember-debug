@@ -2,8 +2,14 @@
   "name": "Ember Debugging Utils",
   "version": "0.1",
   "manifest_version": 2,
-  "content_scripts": [{
-    "matches": ["http://*/*", "https://*/*"],
-    "js": ["console.js"]
-  }]
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["console.js"]
+    },
+    {
+      "matches": ["https://terrabella.addelocal.com:8443/tests*"],
+      "js": ["tests.js"]
+    }
+  ]
 }
